@@ -1,0 +1,23 @@
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Increased gap for better spacing */
+  margin: 20px auto;
+  max-width: 480px;
+  perspective: 1000px;
+  background-color: #4a4a4a;
+  padding: 20px; /* Added padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  text-align: center; /* Center content horizontally */
+}
+
+.card {
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
